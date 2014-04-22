@@ -1,0 +1,43 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+    {% load adminmedia %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/login.css" />
+    <style>
+#instructions {
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+}
+#content-main {
+    width:500px;
+}
+    </style>
+{% endblock %}
+
+{% block bodyclass %}nocred{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div>
+        <h2>Vehicle Registration for Personnel <u>without</u> a Janelia Login</h2>
+        <div id="instructions">
+            <h3>Instructions</h3>
+            <p><strong>Please submit this form <u>ONLY</u> if you <u>do not have a Janelia Login</u></strong></p>
+        </div>
+        <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+        {{regform.as_table}}
+        </table>
+        <input type="submit" value="Submit" name="Submit" id="btn_submit" />
+        </form>
+    </div>
+</div>
+{% endblock %}

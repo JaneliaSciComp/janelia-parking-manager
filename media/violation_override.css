@@ -1,0 +1,6 @@
+div.vehicle_registration {
+  overflow:visible;
+}
+#id_vehicle_registration {
+    width: 350px;
+}

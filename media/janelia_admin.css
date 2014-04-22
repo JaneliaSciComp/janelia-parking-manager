@@ -1,0 +1,61 @@
+/* Override Django admin styles with Janelia based ones 
+
+Other colors: top header light gray: #EEEEEE
+
+
+
+*/
+
+#header {
+    background-color: #EBF8FE;
+    color: #666666;
+    height:90px;
+}
+
+#branding h1 {
+    color: #666666;
+    padding-top:30px;
+    font-size:35px;
+}
+
+body {
+    background-color: #ffffff;
+    color: #666666;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+}
+a {
+    color: #106A94;
+}
+a:visited, #header a, #header a:visited, #header a:link, #user-tools a {
+    color:#106A94;
+}
+a:hover {
+    color:#666666;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    color:#666666;
+    background: url(/media/admin/css/../img/admin/nav-bg.gif) repeat-x scroll left top #EEEEEE;
+}
+
+a.section:link, a.section:visited {
+    color: #666666;
+    text-decoration: none;
+}
+
+img#logo {
+    position:absolute;
+    right:0px;
+    top: 0px;
+}
+#user-tools {
+    position:absolute;
+    right:0px;
+    top: 60px;
+}
+
+.login #container {
+    width: 45em;
+}

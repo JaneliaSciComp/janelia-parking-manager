@@ -1,0 +1,7 @@
+*.pyc
+*.sh
+database_settings.py
+docs/*
+settings.py
+ParkingPermit/management/commands/*
+.svn
